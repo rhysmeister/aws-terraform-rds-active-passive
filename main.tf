@@ -1,5 +1,5 @@
 locals {
-    primary             = "rds2"
+    primary             = "rds1"
 
     allocated_storage        = 10
     engine                   = "mariadb"
@@ -13,7 +13,7 @@ locals {
     username = "admin"
     password = "TopSecret915!"           
     
-    snapshot_identifier = "arn:aws:rds:eu-central-1:824543128771:snapshot:rds:rds1-2022-11-11-11-03"
+    snapshot_identifier = null
 }
 
 resource "aws_db_instance" "rds1" {
