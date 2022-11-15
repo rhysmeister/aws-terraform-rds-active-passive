@@ -68,7 +68,7 @@ resource "aws_ssm_parameter" "admin_username" {
 
 resource "aws_ssm_parameter" "admin_password" {
     name        = "/test/rds/password"
-    description = "Username of RDS Instance"
+    description = "Password of RDS Instance"
     type        = "SecureString"
     value       = local.password
 }
