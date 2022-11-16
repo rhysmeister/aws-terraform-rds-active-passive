@@ -30,7 +30,7 @@ Then we can run terraform apply to restore the snapshot to rds2...
 terraform apply
 ```
 
-# SSM Paramaters
+# SSM Parameters
 
 The following SSM Parameters are created by this module. Then intention here is to provide a method where applications can pick up the new RDS Instance Endpoint.
 
